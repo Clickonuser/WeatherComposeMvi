@@ -140,6 +140,7 @@ private fun CityCard(
                         style = MaterialTheme.typography.bodyLarge.copy(fontSize = 48.sp)
                     )
                 }
+
                 FavouriteStore.State.WeatherState.Loading -> {
                     CircularProgressIndicator(
                         modifier = Modifier.align(Alignment.Center),
@@ -216,7 +217,7 @@ private fun SearchCard(
             Text(
                 text = stringResource(R.string.search),
                 color = MaterialTheme.colorScheme.background,
-                modifier = Modifier.padding(16.dp)
+                modifier = Modifier.padding(end = 16.dp)
             )
         }
     }
